@@ -27,3 +27,16 @@ export interface TokenUsage {
   outputTokens: number;
   totalTokens: number;
 }
+
+export interface ProviderAdapter {
+  readonly name: string;
+  chat(params: ChatParams, apiKey: string): Promise<ProviderResponse>;
+}
+
+export interface ProviderResponse {
+  content: string;
+  model: string;
+  usage: TokenUsage;
+  raw: unknown;
+}
+

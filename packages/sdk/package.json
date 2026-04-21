@@ -18,6 +18,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@modelsights/utils": "workspace:*"
+    "@modelsights/utils": "workspace:*",
+    "openai": "^6.34.0"
   }
 }

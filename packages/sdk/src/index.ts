@@ -1,2 +1,10 @@
 export { ModelSights } from "./client.js";
-export type { ModelSightsConfig, ChatParams, ChatResult } from "./types.js";
+export { ProviderRegistry } from "./providers/registry.js";
+export type {
+  ModelSightsConfig,
+  ChatParams,
+  ChatResult,
+  TokenUsage,
+  ProviderAdapter,
+  ProviderResponse,
+} from "./types.js";
